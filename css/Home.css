@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ropa+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "EB Garamond", serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d7d0d0;
+}
+
+#navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.animate__flash{
+    font-family: "Roboto", serif;
+}
+#navbar img{
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+#offerUpperContainer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#offerUpperContainer h2{
+    font-size: 60px;
+    text-align: center;
+    font-family: sans-serif;
+    animation: flash infinite; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    color: #008979;
+}
+
+
+#CourseCardsContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#CourseCardsContainer h1{
+    font-family: "Roboto", serif;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+}
+
+#innercardContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.CardContainer{
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+    flex-wrap: wrap;
+    /* box-shadow: 1px 2px 10px #828282 , 1px 2px 10px #828282 ,
+    1px 2px 10px #828282 , 1px 2px 10px #828282 , 1px 2px 10px #828282; */
+    box-shadow: 1px 2px 5px #828282 , 1px 2px 5px #828282;
+    border-radius: 20px;
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+.CardContainer img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.CardContainer h2{
+    font-family: "Ropa Sans", serif;
+    text-align: center;
+    color: #008979;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.CardContainer ul{
+    font-size: 15px;
+}
+.CardContainer ul li{
+    font-family: "Roboto Mono", serif;
+    padding: 5px;
+    color: #008979;
+}
+.CardContainer a{
+    font-family: "Roboto", serif;
+    width: 40%;
+    height: auto;
+    margin-top: 7px;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    color: #80e6da;
+    outline: none;
+    border: 2px solid #008979;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    /* box-shadow: 1px 1px 5px #828282 , 1px 1px 5px #828282 ,
+    1px 1px 5px #828282 , 1px 1px 5px #828282, 1px 1px 5px #828282; */
+    /* box-shadow: 1px 1px 5px #828282 , 1px 1px 5px #828282; */
+    transition: .5s ease all;
+    text-decoration: none;
+    text-align: center;
+}
+.CardContainer a:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+#Certificates{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: white;
+}
+#completionCertificate{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#Certificates #completionCertificate h2{
+    font-family: "Roboto", serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#Certificates #completionCertificate img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+  box-shadow: 2px 5px 16px #828282;
+}
+#Certificates #completionCertificate p{
+    font-family: "Roboto", serif;
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+#offerLetter{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#offerLetter h2{
+    font-family: "Roboto", serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#offerLetter p{
+    font-family: "Roboto", serif;
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+#offerLetter img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+  box-shadow: 2px 5px 16px #828282;
+}
+
+
+
+#contactUsPart{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    color: black;
+}
+/* #innerContactUsPart{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+#contactUsPart img{
+    width: 150px;
+    height: auto;
+}
+
+#ContactInfo{
+    font-family: "Roboto", serif;
+    width: auto;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+#ContactInfo h1{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.innerLogoAndInfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.innerLogoAndInfo a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#someAddInfo{
+    width: 40%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+#someAddInfo h1{
+    font-family: "Roboto", serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#someAddInfo p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    font-family: 'Times New Roman', Times, serif !important;
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #008979;
+    border-bottom: 1px solid #008979;
+}
+#footerInfoContainer{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.footerInfoContainer-flex{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+}
+
+#footerInfoContainer p{
+    font-family: "Roboto", serif;
+    font-size: 20px;
+    font-weight: bold;
+    /* background-image: linear-gradient(black, #008979); */
+    background-color: black;
+    color: transparent;
+    background-clip: text;
+}
+#footerInfoContainer img{
+    width: 50px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .CardContainer {
+        width: 40%;
+        /* overflow: hidden; */
+    }
+    .CardContainer li{
+        font-size: 16px;
+    }
+    #offerUpperContainer h2 {
+        font-size: 40px;
+    }
+    #footerInfoContainer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #CourseCardsContainer {
+        padding: 20px;
+    }
+    .CardContainer {
+        width: 80%;
+        overflow: hidden;
+    }
+    #contactUsPart {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    #Certificates img {
+        width: 70%;
+    }
+    #Certificates{
+        flex-direction: column;
+    }
+    #completionCertificate{
+        width: 100%;
+    }
+    #offerLetter{
+        width: 100%;
+    }
+
+    #someAddInfo{
+        width: 100%;
+        margin-top: 10px;
+    }
+    #footerInfoContainer{
+        width: 100%;
+    }
+    #footerInfoContainer p{
+        font-size: 18px;
+    }
+    #footerInfoContainer img{
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #navbar img {
+        width: 120px;
+    }
+    #offerUpperContainer h2 {
+        font-size: 28px;
+    }
+    .CardContainer {
+        width: 90%;
+        overflow: hidden;
+    }
+    #Certificates img {
+        width: 90%;
+    }
+    #someAddInfo{
+        width: 100%;
+        margin-top: 10px;
+    }
+    #footerInfoContainer{
+        width: 100%;
+    }
+    #footerInfoContainer p{
+        font-size: 14px;
+    }
+    #footerInfoContainer img{
+        width: 40px;
+    }
+    .CardContainer a{
+        margin-top: 15px;
+        width: 60%;
+    }
+}
